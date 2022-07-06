@@ -33,18 +33,11 @@ img{
     max-width: 100%;
 }
 
-/* debug */
-
-/* ul, h2, div{
-    border: 1px red solid;
-} */
-
 
 /* layouts */
 
 .big-container{
     height: calc(100vh - 80px);
-    border: 1px red solid;
     display: flex;
 }
 
@@ -55,7 +48,6 @@ img{
 
 .col-1{
     flex-basis: 240px;
-    border: 1px solid blue;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
     padding-bottom: 0.5rem;
@@ -63,29 +55,43 @@ img{
 
 .col-2{
     flex-grow: 1;
-    border: 1px solid blue;
 }
 
 /* navbar menu */
 
 .nav-menu{
     background-color: var(--black);
-    color: white;
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+    color: var(--fontgray);
+    font-size: 14px;
+}
+
+.logo{
+    width: 130px;
+    margin: 1.2rem 0;
+    display: block;
+}
+
+.nav-menu-list a{
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu-list li{
-    line-height: 30px;
+    padding-bottom: 10px;
 }
 
 .icons{
     width: 1.5rem;
-    display: inline-block;
-    float: left;
-    clear: both;
     margin-right: 3px;
-    padding-top: 3px;
+}
+
+.title-playlist{
+    color: white;
+    text-align: center;
+    font-weight: 400;
 }
 
 .fa-square-plus{
@@ -94,23 +100,24 @@ img{
     padding-right: 5px;
 }
 
-.nav-menu{
-    font-weight: 700;
-    color: var(--fontgray);
-}
-
 .nav-menu h2{
     font-size: 1rem;
     padding-bottom: 0.5rem;
     padding-top: 0.2rem;
 }
 
-.logo{
-    width: 130px;
-    height: 40px;
-    align-self: baseline;
-    margin: 1.2rem 0;
-    display: block;
+.playlist-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.playlist-list li:nth-child(1){
+    color: white;
+}
+
+.fa-square-plus{
+    font-size: 2.4rem;
 }
 
 .install-app{
@@ -120,24 +127,24 @@ img{
     justify-content: flex-end;
 }
 
-.title-playlist{
-    color: white;
-    text-align: center;
-    padding-top: 2px;
-    font-weight: 400;
+.install-app li a{
+    display: flex;
+    align-items: center;
 }
 
-.playlist-list{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.install-app li:nth-child(1){
+    border-bottom: 1px solid var(--fontgray);
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.install-app li:nth-child(2){
+    padding-top: 5px;
 }
 
 .icon-download{
-    height: 22px;
+    height: 18px;
     width: 22px;
-    display: inline;
-    vertical-align: middle;
+    padding-right: 3px;
 }
 
 .icon-profile{
@@ -145,15 +152,11 @@ img{
     width: 22px;
     border-radius: 100%;
     background-color: var(--fontgray);
-    display: inline;
-    vertical-align: middle;
 }
 
-hr{
-    border: none;
-    border-top: 1px solid gray;
-    margin-bottom: 0.5rem;
-    margin-top: 0.2rem;
+#profile{
+    padding-left: 4px;
+    color: white;
 }
 
 @media (max-width: 480px){
