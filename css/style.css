@@ -34,13 +34,13 @@ ul, h2, div{
 /* layouts */
 
 .big-container{
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
     border: 1px red solid;
     display: flex;
 }
 
 .small-container{
-    height: 120px;
+    height: 80px;
     border: 1px solid green;
 }
 
@@ -72,5 +72,61 @@ ul, h2, div{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+
+
+/* <!-- big container wrapper songs --> */
+
+.upgrade{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+.menu-wrapper-songs{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper-generi{
+    /* max-height: 1200px;
+    margin: 0 auto; */
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-6{
+    flex-basis: calc(100%/6 - 10px);
+    border: 1px solid black;
+}
+
+.col-26{
+    flex-basis: calc(100%/6);
+}
+
+
+/* Aside */
+
+.toolbar{
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-songs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-songs img{
+    height: 55px;
+    aspect-ratio: 1/1;
 }
 
