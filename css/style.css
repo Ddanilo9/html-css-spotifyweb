@@ -35,9 +35,9 @@ img{
 
 /* debug */
 
-ul, h2, div{
+/* ul, h2, div{
     border: 1px red solid;
-}
+} */
 
 
 /* layouts */
@@ -56,6 +56,9 @@ ul, h2, div{
 .col-1{
     flex-basis: 240px;
     border: 1px solid blue;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 0.5rem;
 }
 
 .col-2{
@@ -66,16 +69,43 @@ ul, h2, div{
 /* navbar menu */
 
 .nav-menu{
-    background-color: black;
+    background-color: var(--black);
     color: white;
     display: flex;
     flex-direction: column;
 }
 
+.icons{
+    width: 1.5rem;
+    padding-top: 3px;
+    display: inline;
+    vertical-align: middle;
+    padding-bottom: 6px;
+}
+
+.fa-square-plus{
+    font-size: 30px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.nav-menu{
+    font-weight: 700;
+    color: var(--fontgray);
+}
+
+.nav-menu h2{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+}
+
 .logo{
-    height: 80px;
+    width: 130px;
+    height: 40px;
     align-self: baseline;
-    padding: 1.2rem 0 1.2rem 1.2rem;
+    margin: 1.2rem 0;
+    display: block;
 }
 
 .install-app{
@@ -85,8 +115,42 @@ ul, h2, div{
     justify-content: flex-end;
 }
 
+.title-playlist{
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    font-weight: 400;
+}
 
+.playlist-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
+.icon-download{
+    height: 22px;
+    width: 22px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.icon-profile{
+    height: 22px;
+    width: 22px;
+    border-radius: 100%;
+    background-color: var(--fontgray);
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+hr{
+    border: none;
+    border-top: 1px solid gray;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+}
 /* <!-- big container wrapper songs --> */
 
 .upgrade{
