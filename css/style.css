@@ -75,12 +75,17 @@ img{
     flex-direction: column;
 }
 
+.nav-menu-list li{
+    line-height: 30px;
+}
+
 .icons{
     width: 1.5rem;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-right: 3px;
     padding-top: 3px;
-    display: inline;
-    vertical-align: middle;
-    padding-bottom: 6px;
 }
 
 .fa-square-plus{
@@ -142,7 +147,6 @@ img{
     background-color: var(--fontgray);
     display: inline;
     vertical-align: middle;
-    
 }
 
 hr{
@@ -151,6 +155,12 @@ hr{
     margin-bottom: 0.5rem;
     margin-top: 0.2rem;
 }
+
+@media (max-width: 480px){
+
+}
+
+
 /* <!-- big container wrapper songs --> */
 
 .upgrade{
