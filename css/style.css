@@ -6,8 +6,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black: #080B12;
+    --gray: #282828;
+    --white: #FCFCFC;
+    --fontgray: #6E6E6E;
+    --darkblue: #141922;
+  }
+
+
 body{
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 ul, li, menu{
@@ -63,8 +72,10 @@ ul, h2, div{
     flex-direction: column;
 }
 
-.nav-menu img{
-    height: 55px;
+.logo{
+    height: 80px;
+    align-self: baseline;
+    padding: 1.2rem 0 1.2rem 1.2rem;
 }
 
 .install-app{
