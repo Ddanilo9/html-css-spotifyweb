@@ -13,13 +13,13 @@
     <main>
         <section class="big-container">
             <nav class="col-1 nav-menu">
-                <img src="img/logo-small.svg" alt="logo hidden">
+                <img class="logo-hidden" src="img/logo-small.svg" alt="logo hidden">
                 <img class="logo" src="img/logo.svg" alt="main-logo">
                 <ul class="nav-menu-list">
                     <li>
                         <a href="">
                             <img class="icons" src="img/home.svg" alt="">
-                            <span>Home</span>
+                            <span class="t-white">Home</span>
                         </a>
                     </li>
                     <li>
@@ -36,9 +36,9 @@
                     </li>
                 </ul>
                 
-                <h2 class="title-playlist">PLAYLIST</h2>
+                <h2 class="title-playlist t-white">PLAYLIST</h2>
                 <ul class="playlist-list">
-                    <li> <a href="">PLAYLIST</a></li>
+                    <li> <a class="t-white" href="">PLAYLIST</a></li>
                     <li> <a href=""><i class="fa-solid fa-square-plus"></i>Crea la tua playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
@@ -59,7 +59,7 @@
                         <li>
                             <a href="img/download.svg">
                                 <img class="icons icon-profile" src="img/profile.svg" alt="">
-                                <span id="profile">John Doe</span>
+                                <span class="t-white" id="profile">John Doe</span>
                             </a>
                         </li> 
                     </ul>
@@ -113,22 +113,25 @@
         <aside class="small-container toolbar">
             <div class="info-songs">
                 <img src="img/sinister.jpeg" alt="">
-                    <div>
-                        <h4>Sinister</h4>
-                        <span>brano nome</span>
-                    </div> 
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <div class="info-song-details">
+                    <h4 class="t-white">Sinister</h4>
+                    <span>Brano Nome</span>
+                </div>
+                <div class="wrapper-favourite">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div> 
             </div>
 
             <div>
                 Player songs Lorem ipsum dolor sit amet consectetur.
             </div>
 
-            <div>
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
+            <div class="info-songs">
+                <i class="fa-solid fa-list t-white"></i>
+                <i class="fa-solid fa-desktop t-white"></i>
+                <i class="fa-solid fa-volume-high t-white"></i>
+                <div class="barra"></div>
             </div>
         </aside>   
     </main>

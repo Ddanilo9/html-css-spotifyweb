@@ -33,7 +33,9 @@ img{
     max-width: 100%;
 }
 
-
+.t-white{
+    color: var(--white);
+}
 /* layouts */
 
 .big-container{
@@ -43,7 +45,6 @@ img{
 
 .small-container{
     height: 80px;
-    border: 1px solid green;
 }
 
 .col-1{
@@ -58,6 +59,10 @@ img{
 }
 
 /* navbar menu */
+
+.logo-hidden{
+    display: none;
+}
 
 .nav-menu{
     background-color: var(--black);
@@ -89,7 +94,6 @@ img{
 }
 
 .title-playlist{
-    color: white;
     text-align: center;
     font-weight: 400;
 }
@@ -110,10 +114,6 @@ img{
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-.playlist-list li:nth-child(1){
-    color: white;
 }
 
 .fa-square-plus{
@@ -156,13 +156,32 @@ img{
 
 #profile{
     padding-left: 4px;
-    color: white;
 }
 
 @media (max-width: 480px){
+ .logo,
+ .nav-menu span,
+ .playlist-list,
+ .title-playlist{
+    display: none;
+ }
 
+ .logo-hidden{
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 10px;
 }
-
+ .install-app li:nth-child(1){
+    border: none;
+ }
+ .col-1{
+    flex-basis: 30px;
+    padding: 4px;
+ }
+ .icons{
+    margin-right: 0;
+ }
+}
 
 /* <!-- big container wrapper songs --> */
 
@@ -182,7 +201,6 @@ img{
 .wrapper-generi{
     /* max-height: 1200px;
     margin: 0 auto; */
-    border: 2px solid green;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -201,16 +219,39 @@ img{
 /* Aside */
 
 .toolbar{
-    background-color: gray;
+    background-color: var(--gray);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--fontgray);
 }
 
 .info-songs{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    width: 240px;
+}
+
+.wrapper-favourite{
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 5PX;
+}
+
+.info-song-details{
+    padding-left: 11px;
+}
+
+.info-song-details h4,
+.info-song-details span{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.fa-folder{
+    padding-left: 10px;
 }
 
 .info-songs img{
@@ -218,3 +259,17 @@ img{
     aspect-ratio: 1/1;
 }
 
+.fa-list,
+.fa-desktop{
+    padding-right: 15px;
+}
+
+.barra{
+    display:inline-block;
+    height: 4px;
+    width: 115px;
+    background-color: var(--fontgray);
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
