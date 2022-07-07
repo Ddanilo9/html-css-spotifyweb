@@ -57,6 +57,7 @@ img{
 
 .col-2{
     flex-grow: 1;
+    background-color: var(--darkblue);
 }
 
 /* navbar menu */
@@ -160,25 +161,53 @@ img{
     display: block;
     padding-top: 3px;
     padding-bottom: 10px;
+    width: 80%;
+    align-self: center;
 }
  .install-app li:nth-child(1){
     border: none;
  }
  .col-1{
-    flex-basis: 30px;
+    flex-basis: 50px;
     padding: 4px;
+    align-items: center;
  }
  .icons{
     margin-right: 0;
  }
 }
 
+@media (max-width: 639px){
+    .col-1{
+        min-width: 235px;
+    }
+}
+
+
+
+
 /* <!-- big container wrapper songs --> */
 
+
+
+
 .upgrade{
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--fontgray);
     height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px;
+}
+
+.btn{
+    border: 2px solid var(--white);
+    background-color: var(--black);
+    border-radius: 30px;
+    color: var(--white);
+    padding: 10px 30px;
+    cursor: pointer;
 }
 
 .menu-wrapper-songs{
@@ -188,22 +217,41 @@ img{
     flex-wrap: wrap;
 }
 
-.wrapper-generi{
-    /* max-height: 1200px;
-    margin: 0 auto; */
+.main-menu{
     display: flex;
+    color: var(--fontgray);
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
     flex-wrap: wrap;
+}
+
+.main-menu a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.wrap-recently{
+    width: 100%;
+    border: 1px solid red;
+}
+
+.wrap-playlist{
+    display: flex;
     gap: 10px;
 }
 
 .col-6{
-    flex-basis: calc(100%/6 - 10px);
-    border: 1px solid black;
+    flex-basis: calc(100%/6);
+    border: 1px solid green;
 }
 
-.col-26{
-    flex-basis: calc(100%/6);
-}
+
+
+
+
+
+
 
 
 /* Aside */
@@ -269,6 +317,7 @@ img{
     padding-top: 10px;
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .long{
@@ -285,3 +334,53 @@ img{
     margin:0 15px;
 }
 
+@media (max-width: 552px){
+   .player, .info-songs{
+    width: 100%;
+   }
+   .info-songs{
+    padding-left: 5px;
+   }
+   .wrapper-favourite{
+    flex-grow: 0;
+    text-align: initial;
+   }
+   .fa-folder{
+    padding-left: 0px;
+    }
+    .player .fa-solid{
+        padding: 0 9px;
+    }
+}
+
+@media (max-width: 639px){
+   .player, .info-songs{
+    width: 100%;
+   }
+   .info-songs{
+    padding-left: 0px;
+   }
+
+   .wrapper-favourite{
+    flex-grow: 0;
+    text-align: initial;
+    display: flex; 
+    flex-direction: column;
+    padding-left: 10px;
+   }
+   .fa-folder{
+    padding-left: 0px;
+    }
+    .player .fa-solid{
+        padding: 0 11px;
+    }
+    .main-menu{
+        gap: 33px;
+    }
+}
+
+@media (max-width: 878px){
+    .main-menu{
+        gap: 31px;
+    }
+}
