@@ -56,8 +56,9 @@ img{
 }
 
 .col-2{
-    flex-grow: 1;
+    width: calc(100% - 225px);
     background-color: var(--darkblue);
+    overflow: auto;
 }
 
 /* navbar menu */
@@ -188,9 +189,6 @@ img{
 
 /* <!-- big container wrapper songs --> */
 
-
-
-
 .upgrade{
     background-color: var(--black);
     color: var(--fontgray);
@@ -224,6 +222,7 @@ img{
     gap: 20px;
     padding: 15px 0;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .main-menu a{
@@ -231,21 +230,55 @@ img{
     font-weight: 700;
 }
 
-.wrap-recently{
+.container{
     width: 100%;
-    border: 1px solid red;
+    padding: 0 15px;
+}
+
+.container h2{
+    font-weight: 800;
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+
+.container h3{
+    color: var(--white);
+    font-size: 16px;
+}
+
+.container span,
+.container p{
+    color: var(--fontgray);
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.box-creato-per-te{
+    padding-top: 20px;
 }
 
 .wrap-playlist{
     display: flex;
     gap: 10px;
+
 }
 
 .col-6{
     flex-basis: calc(100%/6);
-    border: 1px solid green;
 }
 
+.box-info-playlist{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.border{
+    border-radius: 100%;
+}
 
 
 
