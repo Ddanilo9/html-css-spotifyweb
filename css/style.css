@@ -179,7 +179,8 @@ img{
     border: none;
  }
  .col-1{
-    width: 50px;
+    flex-basis: 50px;
+    min-width: 0px;
     padding: 4px;
     align-items: center;
  }
@@ -436,6 +437,7 @@ img{
    .wrapper-favourite{
     flex-grow: 0;
     text-align: initial;
+    padding-right: 15px;
    }
    .fa-folder{
     padding-left: 0px;
