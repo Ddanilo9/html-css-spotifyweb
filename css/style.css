@@ -150,6 +150,12 @@ img{
     padding-left: 4px;
 }
 
+@media (max-width: 639px){
+    .col-1{
+        min-width: 235px;
+    }
+}
+
 @media (max-width: 552px){
  .logo,
  .nav-menu span,
@@ -158,18 +164,22 @@ img{
     display: none;
  }
 
+ .col-2{
+    flex-grow: 1;
+ }
+
  .logo-hidden{
     display: block;
     padding-top: 3px;
     padding-bottom: 10px;
-    width: 80%;
+    width: 60%;
     align-self: center;
 }
  .install-app li:nth-child(1){
     border: none;
  }
  .col-1{
-    flex-basis: 50px;
+    width: 50px;
     padding: 4px;
     align-items: center;
  }
@@ -178,11 +188,6 @@ img{
  }
 }
 
-@media (max-width: 639px){
-    .col-1{
-        min-width: 235px;
-    }
-}
 
 
 
@@ -280,7 +285,29 @@ img{
     border-radius: 100%;
 }
 
+@media (max-width:878px){
+    .col-6{
+    flex-basis: calc(100%/4 - 10px);
+    }
+    .wrap-playlist{
+        flex-wrap: wrap;
+    }
+}
 
+@media (max-width:639px){
+    .col-6{
+    flex-basis: calc(100%/2 - 10px);
+    }
+    .wrap-playlist{
+        flex-wrap: wrap;
+    }
+    .box-info-playlist{
+        gap: 0;
+    }
+    .container span{
+        padding-bottom: 0;
+    }
+}
 
 
 
@@ -367,6 +394,38 @@ img{
     margin:0 15px;
 }
 
+@media (max-width: 878px){
+    .main-menu{
+        gap: 26px;
+    }
+}
+
+@media (max-width: 639px){
+    .player, .info-songs{
+     width: 100%;
+    }
+    .info-songs{
+     padding-left: 0px;
+    }
+ 
+    .wrapper-favourite{
+     flex-grow: 0;
+     text-align: initial;
+     display: flex; 
+     flex-direction: column;
+     padding-left: 10px;
+    }
+    .fa-folder{
+     padding-left: 0px;
+     }
+     .player .fa-solid{
+         padding: 0 11px;
+     }
+     .main-menu{
+         gap: 33px;
+     }
+ }
+ 
 @media (max-width: 552px){
    .player, .info-songs{
     width: 100%;
@@ -386,34 +445,4 @@ img{
     }
 }
 
-@media (max-width: 639px){
-   .player, .info-songs{
-    width: 100%;
-   }
-   .info-songs{
-    padding-left: 0px;
-   }
 
-   .wrapper-favourite{
-    flex-grow: 0;
-    text-align: initial;
-    display: flex; 
-    flex-direction: column;
-    padding-left: 10px;
-   }
-   .fa-folder{
-    padding-left: 0px;
-    }
-    .player .fa-solid{
-        padding: 0 11px;
-    }
-    .main-menu{
-        gap: 33px;
-    }
-}
-
-@media (max-width: 878px){
-    .main-menu{
-        gap: 31px;
-    }
-}
