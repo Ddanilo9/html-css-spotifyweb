@@ -76,6 +76,9 @@ img{
     font-size: 14px;
 }
 
+.nav-menu li:hover{
+    color: var(--white);
+}
 .logo{
     width: 130px;
     margin: 1.2rem 0;
@@ -203,6 +206,7 @@ img{
     justify-content: flex-end;
     align-items: center;
     padding: 3px;
+    margin-right: 10px;
 }
 
 .btn{
@@ -219,6 +223,44 @@ img{
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.wrapper-img{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.overlay i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.main-menu li a:hover{
+    color: #fff;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(128, 248, 128);
+}
+
+.col-2 .upgrade:hover .btn{
+    transform: scale(1.1);
+}
+
+.col-6 .wrapper-img:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .main-menu{
@@ -333,10 +375,19 @@ img{
     width: 240px;
 }
 
+.info-song-details span:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
+
 .wrapper-favourite{
     flex-grow: 1;
     text-align: end;
     padding-right: 5PX;
+}
+
+.wrapper-favourite .fa-regular:hover{
+    color: var(--white);
 }
 
 .info-song-details{
