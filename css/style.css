@@ -261,6 +261,7 @@ img{
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: var(--white);
+    opacity: 0;
 }
 
 .main-menu li a:hover{
@@ -276,6 +277,11 @@ img{
 .col-6 .wrapper-img:hover .overlay{
     opacity: 1;
     cursor: pointer;
+}
+.col-6 .wrapper-img .overlay i:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
 }
 
 .main-menu{
